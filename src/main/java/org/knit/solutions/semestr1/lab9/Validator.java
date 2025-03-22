@@ -1,8 +1,8 @@
 package org.knit.solutions.semestr1.lab9;
 
-import org.knit.semestr1.lab9.Retentions.MaxLength;
-import org.knit.semestr1.lab9.Retentions.Min;
-import org.knit.semestr1.lab9.Retentions.NotNull;
+import org.knit.solutions.semestr1.lab9.Retentions.MaxLength;
+import org.knit.solutions.semestr1.lab9.Retentions.Min;
+import org.knit.solutions.semestr1.lab9.Retentions.NotNull;
 
 import java.lang.reflect.Field;
 
