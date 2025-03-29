@@ -85,7 +85,7 @@ public class MergingSorterTest {
         long elapsedTime = System.currentTimeMillis() - time;
         System.out.println("Занятое время: " + elapsedTime);
 
-        assertFalse("Тест на производительность не пройден", elapsedTime > 400);
+        assertFalse("Тест на производительность не пройден", elapsedTime > 200);
     }
 
     @After
