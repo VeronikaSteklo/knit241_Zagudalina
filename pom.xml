@@ -40,8 +40,8 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.17.0</version>
         </dependency>
-
         <dependency>
+
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.6.0</version>
@@ -51,22 +51,6 @@
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.47.1.0</version>
-        </dependency>
-
-        <!-- JUnit 4.12 -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Mockito -->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>3.12.4</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
