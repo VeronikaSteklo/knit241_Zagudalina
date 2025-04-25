@@ -1,5 +1,7 @@
 package org.knit.solutions.task20.repository;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.knit.solutions.task20.model.PasswordEntry;
 import org.springframework.stereotype.Repository;
 
@@ -11,17 +13,11 @@ import java.util.Map;
 @Repository
 public class InMemoryPasswordRepository implements PasswordRepository {
     private final Map<String, PasswordEntry> storage = new HashMap<>();
-    private String masterPassword;
-
-    // Сохраняем мастер-пароль
-    public void setMasterPassword(String masterPassword) {
-        this.masterPassword = masterPassword;
-    }
-
     // Получаем мастер-пароль
-    public String getMasterPassword() {
-        return masterPassword;
-    }
+    // Сохраняем мастер-пароль
+    @Getter
+    @Setter
+    private String masterPassword;
 
     @Override
     public void save(PasswordEntry entry) {
