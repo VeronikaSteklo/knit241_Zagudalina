@@ -1,5 +1,7 @@
 package org.knit.solutions.task20.security;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.knit.solutions.task20.repository.InMemoryPasswordRepository;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +10,8 @@ import java.util.Scanner;
 @Component
 public class MasterPasswordHolder {
     private final InMemoryPasswordRepository repository;
+    @Getter
+    @Setter
     private String masterPassword;
 
 
@@ -20,14 +24,6 @@ public class MasterPasswordHolder {
             String masterPassword = scanner.nextLine();
             setMasterPassword(masterPassword);
         }
-    }
-
-    public void setMasterPassword(String masterPassword) {
-        this.masterPassword = masterPassword;
-    }
-
-    public String getMasterPassword() {
-        return masterPassword;
     }
 
     public void clear() {

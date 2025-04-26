@@ -9,7 +9,8 @@ import org.springframework.context.annotation.Configuration;
         "org.knit.solutions.Task20.crypto",
         "org.knit.solutions.Task20.security",
         "org.knit.solutions.Task20.clipboard",
-        "org.knit.solutions.Task20.service"
+        "org.knit.solutions.Task20.service",
+        "org.knit.solutions.Task20.storage"
 })
 public class AppConfig {
 }
